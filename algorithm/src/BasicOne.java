@@ -1,9 +1,7 @@
 import java.math.BigInteger;
 public class BasicOne {
-    static int fibonacci(int n) {
-        if (n == 1 || n == 2) return 1;
-        return fibonacci(n-1) + fibonacci(n-2);
-    }
+
+
 
     static  void fractions() {
 
@@ -69,6 +67,16 @@ public class BasicOne {
         }
     }
 
+
+    static int fibonacci(int n) {
+        if (n == 1 || n == 2) return 1;
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+
+    static int add(int a) {
+        return a + 1;
+    }
+
     public static void main(String[] args) {
 //        oddEven();
 //        squared();
@@ -77,7 +85,9 @@ public class BasicOne {
 //        step6();
 //        factorial();
 //        fractions();
-        int result = fibonacci(8);
+//        int result = fibonacci(5);
+//        System.out.println(result);
+        int result = add(add(add(add(2))));
         System.out.println(result);
     }
 }
